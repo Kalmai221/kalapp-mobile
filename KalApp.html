@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <script src='file:///android_asset/app.js'></script>
+</head>
+	
+<script>
+    //Called after application is started.
+    function OnStart()
+{
+    app.ShowProgressBar( "Initialising App" );
+
+    for( prog = 0; prog < 100; prog++ )
+        app.UpdateProgressBar( prog );
+
+    app.HideProgressBar();
+}
+</script>
+
+<style>
+	body { background-color: #ffffff; }
+    .hello 
+    { 
+        font-size: 42; 
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+        color: blue;
+    }
+</style>
+
+<body onload="app.Start()">
+
+	<div class=hello>In Development!</div>
+	
+</body>
+</html>
